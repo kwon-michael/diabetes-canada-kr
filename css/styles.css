@@ -1,0 +1,302 @@
+-------------------------------------------------------------
+
+/* Basic Setup */
+/* colors used: #003459 - prussian blue, #00171F - rich black, #007EA7 - cerulean, #00A8E8 - picton blue  
+
+/* ------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+
+}
+
+html,
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+.nav-row {
+    position: relative;
+    max-width: 800px;
+    top: 30px;
+    margin: 0 auto;
+    background-color: #003459;
+    border-radius: 80px;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #FBF9FF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    border-bottom: 2px solid #A2A3BB;
+    color: #A2A3BB;
+    /* Change color on hover */
+}
+
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image04.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: white;
+}
+
+/* about section*/
+.about {
+    padding: 50px 20px;
+    /* Example padding for content spacing */
+    background-color: #f5f5f5;
+    /* Background color for the about section */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.5em;
+}
+
+/* nutrition section */
+
+.split-section {
+    display: flex;
+    max-width: 1400px;
+    /* Adjust the maximum width as needed */
+    width: 100%;
+}
+
+
+.split-text {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 100px;
+}
+.split-text p{
+    font-size: 1.5em;
+    margin-bottom: 30px ;
+}
+.split-image {
+    flex: 1;
+}
+
+.split-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* resources */
+.centered-section {
+    text-align: center;
+    padding: 50px 20px;
+    /* Example padding for content spacing */
+    background-color: #f5f5f5;
+    /* Background color for the section */
+}
+
+.centered-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.centered-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+
+
+.video-thumbnail img {
+    width: 50%;
+    /* Make the thumbnail fill its container */
+    height: auto;
+    transition: transform 0.2s ease;
+    /* Transition property for the hover effect */
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.05);
+    /* Scale the image on hover */
+}
+
+.video-thumbnail img {
+    width: 50%;
+    /* Make the thumbnail fill its container */
+    height: auto;
+    border: 1px solid #ccc;
+    /* Optional border for aesthetics */
+}
+
+/* Contact section styles */
+.simple-contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    /* Example padding for content spacing */
+    background-color: #333;
+    /* Background color for the section */
+    color: white;
+}
+
+.simple-contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.simple-contact-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.simple-contact-content p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.simple-contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple-contact-form label,
+.simple-contact-form textarea,
+.simple-contact-form input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.simple-contact-form textarea {
+    height: 150px;
+}
+
+.simple-contact-form input[type="submit"] {
+    background-color: #007EA7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.simple-contact-form input[type="submit"]:hover {
+    background-color: #005d7e;
+}
