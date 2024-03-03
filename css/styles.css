@@ -186,8 +186,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image04.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(/img/image04.jpg);
     background-size: cover;
+    background-position:top;
+    height: 100vh;
+    background-attachment: fixed;
     color: white;
     text-align: center;
 }

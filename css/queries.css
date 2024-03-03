@@ -1,0 +1,69 @@
+/* Global styles remain the same */
+
+/* Media Query for screens smaller than 1140px (General adjustments) */
+@media only screen and (max-width: 1140px) {
+    .row, .about-content, .centered-content, .simple-contact-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-row, .main-nav ul {
+        justify-content: space-around;
+    }
+
+    .modal-content, .about-content, .split-section, .centered-content {
+        width: 100%;
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .split-text {
+        padding-left: 20px;
+    }
+}
+
+/* Media Query for screens between 1023px and 1200px */
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+    .row, .about-content, .centered-content, .simple-contact-content {
+        max-width: 90%; /* Slightly narrower content for better readability */
+    }
+
+    .main-nav li {
+        margin: 0 10px; /* Reduce spacing between nav items */
+    }
+}
+
+/* Media Query for small phones to small tablets (481px to 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    html, body {
+        font-size: 18px; /* Slightly reduce font size */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Adjust headline size for smaller screens */
+    }
+
+    .hero p, .about-content p, .split-text p, .centered-content p, .simple-contact-content p {
+        font-size: 1.2em; /* Adjust paragraph text size for readability */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+
+    .split-section {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .split-text, .split-image {
+        padding: 0 20px; /* Adjust padding for small screens */
+    }
+
+    .simple-contact-form label, .simple-contact-form textarea, .simple-contact-form input[type="submit"] {
+        width: 90%; /* Adjust form elements width */
+    }
+}
