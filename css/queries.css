@@ -35,8 +35,9 @@
 /* Media Query for small phones to small tablets (481px to 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     html, body {
-        font-size: 18px; /* Slightly reduce font size */
+        font-size: 16px; /* Slightly reduce font size */
     }
+
 
     .hero h1 {
         font-size: 2.5em; /* Adjust headline size for smaller screens */
@@ -66,4 +67,36 @@
     .simple-contact-form label, .simple-contact-form textarea, .simple-contact-form input[type="submit"] {
         width: 90%; /* Adjust form elements width */
     }
+}
+@media only screen and (max-width: 480px){
+    section{padding: 25px 0;}
+
+    html, body {
+        font-size: 14px; /* Slightly reduce font size */
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+
+    .split-section {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .split-text, .split-image {
+        padding: 0 20px; /* Adjust padding for small screens */
+    }
+
+    .simple-contact-form label, .simple-contact-form textarea, .simple-contact-form input[type="submit"] {
+        width: 90%; /* Adjust form elements w
+
 }
